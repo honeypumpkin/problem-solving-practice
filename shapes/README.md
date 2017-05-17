@@ -3,25 +3,28 @@
 These problems are variations on a theme. Each will have you return a string that consists of a shape built out of `#` (hash) characters.
 
 1. Write a function `line(n)` that returns a line with exactly `n` hashes.
-    ```python
-    print(line(5))
-    ```
+```python
+def line(n):
+    h = '#'
+    return h * n
+print(line(5))
+```
     **Output:**
-    ```
+```
     #####
-    ```
+```
 1. Write a function `square(n)` that returns an `n` by `n` square of hashes. Use your `line` function to do this.
-    ```python
-    print(square(5))
-    ```
-    **Output:**
-    ```
-    #####
-    #####
-    #####
-    #####
-    #####
-    ```
+```python
+print(square(5))
+```
+**Output:**
+```
+#####
+#####
+#####
+#####
+#####
+```
 1. Write a function `rectangle(width, height)` that returns a rectangle with width and height given by the parameters. Use your `line` function to do this.
     ```python
     print(rectangle(5, 3))
